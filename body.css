@@ -1,0 +1,551 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* Nav styling */ 
+nav {
+  background:#257187;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+label.logo {
+  color: black;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  color: black;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #020202;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+/* Nav body text styling */ 
+.text{
+color: white; 
+font-size: 2.5em;
+text-align: center;
+padding-top: 60px;
+}
+.text>h3{
+  color:#0A4453;
+  font-size: 50%
+}
+/* search bar styling */
+.input-box {
+  position: relative;
+  height: 70px;
+  max-width: 900px;
+  width: 60%;
+  background: #fff;
+  margin: 0 260px;
+  border-radius: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box i,
+.input-box .button {
+position: absolute;
+top: 50%;
+transform:translateY(-50%);
+}
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;}
+.input-box input {
+      height: 100%;
+      width: 100%;
+      outline: none;
+      font-size: 18px;
+      font-weight: 400;
+      border: none;
+      padding: 0 155px 0 65px;
+      background-color: transparent;}
+.input-box .button {
+          right: 20px;
+          font-size: 16px;
+          font-weight: 400;
+          color: #fff;
+          border: none;
+          padding: 12px 30px;
+          border-radius: 20px;
+          background-color:#46CFB0;
+          cursor: pointer;
+        }
+.input-box .button:active {
+          transform: translateY(-50%) scale(0.98);
+        }
+/* box1 styling */
+.boxes{
+background-color:#00ffff;
+display: flex;
+padding-top: 10%;
+border-end-start-radius: 10%;
+border-end-end-radius: 10%;
+
+
+}
+.box1{
+  background-color: rgb(250, 246, 246);
+  height:300px;
+  width:30%;
+  border-radius:20px;
+  padding-left:20px;
+  padding-top:10px;
+  margin-left: 10%;
+  transform: translateY(-250px);
+ 
+ } 
+.box1 > img{
+ 
+  height: 50%;
+  width:100%;
+  transform: translateY(140px);
+  border-radius:20px;
+
+  }
+.box2 > img{
+height: 100%;
+width: 160%;
+transform:translateY(-7%);
+border-radius:20px;
+margin-left: -20%;
+}
+.box1 > h3{
+  color:black;
+  transform:translateY(-450%);
+  }
+  .box1 > p{
+  color:rgb(8, 1, 1);
+  transform:translateY(-280%);
+  }
+.box2{
+ height:300px;
+ width:30%;
+ border-radius:20px;
+ padding-left:20px;
+ padding-top:10px;
+ margin-left: 10%;
+ transform: translateY(-240px);
+
+} 
+.box2 > h3{
+color:black;
+transform:translateY(-850%);
+}
+.box2 > p{
+color:rgb(8, 1, 1);
+transform:translateY(-380%);
+}
+.share{
+  display:flex;
+  gap:10px;
+}
+.num{
+  background-color: #159af3;
+  height: fit-content;
+  transform: translateX(-180%);
+  margin-top: -18%;
+}
+.num1{
+  background-color: #159af3;
+  width: fit-content;
+  transform: translatey(-400px);
+  margin-left: 100%;
+}
+.share{
+  transform: translateY(-220px);
+
+}
+/*-------------------------*/
+.body1{
+  margin-top: 5%;
+}
+.body1 > h1{
+  text-align: center;
+}
+.list{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+/*--------------------------body2----------------------------------------*/
+.body2{
+  display: flex;
+  margin: 15% 5%;
+}
+.box3{
+  background-color: rgb(250, 246, 246);
+  height:300px;
+  width:25%;
+  border-radius:20px;
+  padding-left:20px;
+  padding-top:10px;
+  margin:5% 5%;
+  transform: translateY(-180px);
+ } 
+ .hi{
+  background-color: #159af3;
+  width: fit-content;
+  transform: translateX(220PX);
+
+ }
+ .box3 > img{
+  height: 50%;
+  width: 80%;
+ }
+
+ /*-----------*/
+ .container{
+  background-image: url('./image\ \(3\).jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color:aqua;
+  transform: translateY(-300px);
+}
+.hello  {
+  color: white;
+  text-align: center;
+  font-size: 150%;
+  
+}
+.hello1{
+  color:white;
+  padding-left:25%;
+  font-size:130%;
+}
+.hello2{
+  color:white;
+  padding-left: 25%;
+}
+.hi2{
+  color:white;
+  padding-left:25%;
+  font-size:130%;
+}
+.hi1{
+  color:white;
+  padding-left: 25%;
+}
+.hii{
+  color:white;
+  padding-left:25%;
+  font-size:130%;
+}
+.hii1{
+  color:white;
+  padding-left: 25%;
+}
+.huu{
+  color:white;
+  padding-left: 35%;
+margin-bottom: 0;
+display:inline-flex;
+}
+.huu > button{
+  border-radius:50PX;
+  height: fit-content;
+  color:#62CDF3;
+  border-color: #62CDF3; 
+}
+/*****************************************************How does it works style ends*****************************************/
+
+/***************************************************Frequently asked starts*********************************************/
+.overall{
+  background-color:white;
+  margin: 5% 5%;
+  transform: translateY(-350px);
+}
+.first{
+ transform:translateX(-35%);
+
+}
+.first1 input {
+  height: 50px;
+  width:50%;
+  border-radius: 50px;
+  padding-left: 4%;
+  font-size:20px;
+  margin-left:35%;
+  transform:translateY(30%);
+ 
+
+}
+.first1 h1{
+  margin-right:70%;
+  margin-top:10%
+
+}
+.first1 img{
+padding-top: -10%;
+transform:translateY(-35%);
+padding-left:5%;
+
+}
+.first1 p{
+padding-left:36%;
+transform:translatey(60%);
+
+}
+.text{
+transform:translateY(-300%);
+font-weight: 900;
+}
+
+/****************************************************************Frequently asked ends*************************************/
+/*********************************************************Get in touch starts************************************************/ 
+.indexf {
+background-color: antiquewhite;
+flex-direction: column;
+align-items: center;
+margin-top: -100px;
+transform: translateY(-350px);
+}
+
+.indexf h1 {
+margin-bottom: 20px;
+}
+h1 {
+text-align: center;
+margin: 0 auto;
+}
+
+.indexf-content {
+display: flex;
+flex-direction: row;
+}
+
+.index2.ind {
+width: 50%;
+}
+
+.index.ind {
+width: 25%;
+margin-left: 20px;
+}
+ /*****************************************************How does it works style ends*****************************************/
+
+/***************************************************Frequently asked starts*********************************************/
+.overall{
+  background-color:white;
+  margin: 5% 5%;
+  margin-top: -10%;
+
+}
+.first{
+ transform:translateX(-35%);
+
+}
+.first1 input {
+  height: 50px;
+  width:50%;
+  border-radius: 50px;
+  padding-left: 4%;
+  font-size:20px;
+  margin-left:35%;
+  transform:translateY(30%);
+ 
+
+}
+.first1 h1{
+  margin-right:70%;
+  margin-top:10%
+
+}
+.first1 img{
+padding-top: -10%;
+transform:translateY(-35%);
+padding-left:5%;
+
+}
+.first1 p{
+padding-left:36%;
+transform:translatey(60%);
+
+}
+.text1 > p{
+  color: #2c3e50;
+  transform: translateY(-180px);
+}
+
+/****************************************************************Frequently asked ends*************************************/
+/*********************************************************Get in touch starts************************************************/ 
+.indexf {
+background-color: antiquewhite;
+flex-direction: column;
+align-items: center;
+margin-top: -100px;
+}
+
+.indexf h1 {
+margin-bottom: 20px;
+}
+h1 {
+text-align: center;
+margin: 0 auto;
+}
+
+.indexf-content {
+display: flex;
+flex-direction: row;
+}
+
+.index2.ind {
+width: 50%;
+}
+
+.index.ind {
+width: 25%;
+margin-left: 20px;
+}
+
+/**********************************************************Get in touch Ends*******************************************/  
+/***********************************************Footer Starts**********************************************************/ 
+.overallf {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top:-25%;
+}
+.footer {
+  width: 20%;
+  text-align: center;
+}
+.footer > h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer1 {
+  width: 20%;
+  text-align: center;
+}
+.footer1 > h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer1 > p {
+  color: rgb(33, 87, 87);
+}
+.footer2 {
+  width: 20%;
+  text-align: center;
+}
+.footer2 > h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer2 > p {
+  color: rgb(33, 87, 87);
+}
+.footer3 {
+  width: 20%;
+  text-align: center;
+}
+.footer3 > button {
+  background-color: #34C8B1;
+  color: white;
+  margin-bottom: 10px;
+}
+.footer3 > h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/*****************************************
+ 
+ 
